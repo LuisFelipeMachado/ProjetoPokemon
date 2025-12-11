@@ -18,7 +18,6 @@ class Cart {
         var_dump('NOT IN CART');
     }
 }
-
     private function setProductsInCart($product){
         $_SESSION['cart']['products'] = $product;
     }
@@ -32,4 +31,5 @@ class Cart {
         return $_SESSION['cart']['products'] ?? [];
     }
 }
+
 
