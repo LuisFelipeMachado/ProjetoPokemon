@@ -9,6 +9,7 @@ class Pikachu extends Pokemon {
          35,
          55,
          40,
+         43,
          50);
     }
 }

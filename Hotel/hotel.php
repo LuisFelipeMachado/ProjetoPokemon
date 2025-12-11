@@ -97,6 +97,7 @@ class Hotel {
 
     private function salvarReservas() {
         file_put_contents("dados.json", json_encode($this->reservas, JSON_PRETTY_PRINT));
+        console_log("Reservas salvas com sucesso.");
     }
 }
 ?>

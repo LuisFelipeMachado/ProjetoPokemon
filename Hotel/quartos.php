@@ -14,6 +14,7 @@ foreach ($quartos as $quarto) {
     ];
 }
 
+console.log($dados);
 header('Content-Type: application/json');
 echo json_encode($dados);
 ?>
