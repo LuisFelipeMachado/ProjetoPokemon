@@ -17,7 +17,9 @@ $opcoes = [
 foreach ($opcoes as $numero => $pokemon){
     echo "$numero -" . $pokemon->getName() . "\n";
 }
-$entrada = readline("Digite um Número do seu Pokémon\n");
+$entrada = null;
+echo "Digite um Número do seu Pokémon\n";
+$entrada = trim(fgets(STDIN));
 $jogador = $opcoes[$entrada] ?? new Charmander();
 
 echo "\nVocê Escolheu: " . $jogador->getName() . "\n";
@@ -27,7 +29,8 @@ echo "Ataque: " . $jogador->getAtaque() . "\n";
 echo "Defesa " . $jogador->getDefesa() . "\n";
 echo "AtaqueEspecial: " . $jogador->getAtaqueEspecial() . "\n";
 
-readline("\nPressione ENTER para iniciar a Batalha");
+echo "\nPressione ENTER para iniciar a Batalha";
+fgets(STDIN);
 
 $todos = [new Charmander(), new Squirtle(), new Pikachu()];
 $adversarios = array_filter($todos, function($pokemon) use ($jogador) {
