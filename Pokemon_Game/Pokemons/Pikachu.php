@@ -6,7 +6,7 @@ class Pikachu extends Pokemon {
         ["Raio", "Choque do Trovão"],
         ["Terrestre"],
         ["Eletrico"], 
-         35,
+         42,
          55,
          40,
          43,
