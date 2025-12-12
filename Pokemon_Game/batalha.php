@@ -17,7 +17,6 @@ $opcoes = [
 foreach ($opcoes as $numero => $pokemon){
     echo "$numero -" . $pokemon->getName() . "\n";
 }
-
 $entrada = readline("Digite um Número do seu Pokémon\n");
 $jogador = $opcoes[$entrada] ?? new Charmander();
 
