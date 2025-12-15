@@ -25,7 +25,6 @@ abstract class Pokemon {
         $this->defesa = $this->calcularEstatistica($baseDefesa);
         $this->ataqueEspecial = $this->calcularEstatistica($baseAtaqueEspecial);
     }
-
     public function getName(): string {
         return $this->name;
     }
